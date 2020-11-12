@@ -17,8 +17,13 @@ public class Habitant {
 		this.poids = poids;
 	}
 	
-	public boolean RameneCasque(int Id) {
+	public Casque RameneCasque(int Id,String grade, String etat, String forme) {
 		
-		return true;
+		Casque casque = new Casque(Id, grade, etat, forme );
+		
+		return casque;
+	
+		
+		
 	}
 }
