@@ -1,9 +1,9 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class musee {
 
-	ArrayList<String> listeCasque = new ArrayList<String>();
-	
+	HashMap<Integer, Boolean> listeCasque = new HashMap<Integer, Boolean>();	
 	
 	
 
