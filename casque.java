@@ -16,4 +16,29 @@ public class casque {
 		
 	}
 	
+	public boolean dejaEnregistrer(int id , musee Musee) {
+		boolean verif = false;
+		for (Integer i : Musee.listeCasque.keySet()) {
+			if (i== id) {
+				verif= true;
+			}
+			
+		}
+		return verif;
+		
+
+	}
+	
+	
+	public void ajoutMusee(int id, musee Musee) {
+		if (dejaEnregistrer(id, Musee) == false) {
+			Musee.listeCasque.put(id, false);
+		}
+		System.out.println("Ajout du casque dans le musée");
+		
+	}
+	
+
 }
+
+	
