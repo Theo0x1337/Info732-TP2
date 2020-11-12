@@ -33,8 +33,11 @@ public class Casque {
 	public void ajoutMusee(int id, Musee Musee) {
 		if (dejaEnregistrer(id, Musee) == false) {
 			Musee.listeCasque.put(id, false);
-		}
 		System.out.println("Ajout du casque dans le musée");
+		}
+		else {
+			System.out.println("Le casque existe deja dans le musée");
+		}
 		
 	}
 	
